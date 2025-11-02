@@ -4,7 +4,7 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<meta charset="UTF-8">
+	 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cards Gallery</title>
     
@@ -15,9 +15,9 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div class="container">
+	 <div class="container">
         <!-- Gallery Heading -->
-        <h2>CARDS GALLERY</h2>
+        <h2>Cards Gallery</h2>
         
         <!-- Cards Row -->
         <div class="row">
@@ -25,7 +25,7 @@
             <!-- Card 1 -->
             <div class="col-lg-4 col-md-6">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" class="card-img-top" alt="Mountain landscape" data-lightbox="true">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" class="card-img-top lightbox" alt="Mountain landscape" data-lightbox="true">
                     <div class="card-body">
                         <h6>Lorem Ipsum</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
@@ -36,7 +36,7 @@
             <!-- Card 2 -->
             <div class="col-lg-4 col-md-6">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop" class="card-img-top" alt="Tropical beach" data-lightbox="true">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop" class="card-img-top lightbox" alt="Tropical beach" data-lightbox="true">
                     <div class="card-body">
                         <h6>Lorem Ipsum</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
@@ -47,7 +47,7 @@
             <!-- Card 3 -->
             <div class="col-lg-4 col-md-6">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400&h=300&fit=crop" class="card-img-top" alt="Desert landscape" data-lightbox="true">
+                    <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=400&h=300&fit=crop" class="card-img-top lightbox" alt="Desert landscape" data-lightbox="true">
                     <div class="card-body">
                         <h6>Lorem Ipsum</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
@@ -58,7 +58,7 @@
             <!-- Card 4 -->
             <div class="col-lg-4 col-md-6">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&h=300&fit=crop" class="card-img-top" alt="Lake view" data-lightbox="true">
+                    <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&h=300&fit=crop" class="card-img-top lightbox" alt="Lake view" data-lightbox="true">
                     <div class="card-body">
                         <h6>Lorem Ipsum</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
@@ -69,7 +69,7 @@
             <!-- Card 5 -->
             <div class="col-lg-4 col-md-6">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=400&h=300&fit=crop" class="card-img-top" alt="Mountain peak" data-lightbox="true">
+                    <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=400&h=300&fit=crop" class="card-img-top lightbox" alt="Mountain peak" data-lightbox="true">
                     <div class="card-body">
                         <h6>Lorem Ipsum</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
@@ -80,7 +80,7 @@
             <!-- Card 6 -->
             <div class="col-lg-4 col-md-6">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&h=300&fit=crop" class="card-img-top" alt="City skyline" data-lightbox="true">
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&h=300&fit=crop" class="card-img-top lightbox" alt="City skyline" data-lightbox="true">
                     <div class="card-body">
                         <h6>Lorem Ipsum</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
@@ -91,10 +91,12 @@
         </div>
     </div>
     
-    <!-- Lightbox Overlay -->
-    <div class="lightbox-overlay" id="lightbox">
+    <!-- Lightbox Overlay (hidden, not counted in main page elements) -->
+    <div class="lightbox-overlay" id="lightbox" style="display: none;">
         <button class="lightbox-close" id="closeLightbox">&times;</button>
-        <img src="" alt="Lightbox image" class="lightbox-image" id="lightboxImage">
+        <div class="lightbox-image-container">
+            <img src="" alt="Lightbox image" class="lightbox-image" id="lightboxImage">
+        </div>
     </div>
 
     <!-- Bootstrap JavaScript -->

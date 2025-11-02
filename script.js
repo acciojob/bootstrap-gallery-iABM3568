@@ -1,4 +1,3 @@
-//your JS code here. If required.
 // Get all images with lightbox attribute
         const images = document.querySelectorAll('[data-lightbox="true"]');
         const lightbox = document.getElementById('lightbox');

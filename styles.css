@@ -1,5 +1,4 @@
-/*  your css code here. If applicable */
-/* Internal CSS for styling */
+  /* Internal CSS for styling */
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
@@ -11,7 +10,6 @@
             margin-bottom: 30px;
             font-size: 14px;
             font-weight: 600;
-            text-transform: uppercase;
             letter-spacing: 1px;
             color: #333;
         }
@@ -65,7 +63,6 @@
         
         /* Lightbox overlay */
         .lightbox-overlay {
-            display: none;
             position: fixed;
             top: 0;
             left: 0;
@@ -78,7 +75,14 @@
         }
         
         .lightbox-overlay.active {
+            display: flex !important;
+        }
+        
+        /* Lightbox image container */
+        .lightbox-image-container {
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         /* Lightbox image */
