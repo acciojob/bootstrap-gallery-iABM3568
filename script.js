@@ -1,5 +1,6 @@
 // Get all images with lightbox attribute
-        const images = document.querySelectorAll('[data-lightbox="true"]');
+        // Get all images with lightbox class
+        const images = document.querySelectorAll('.lightbox');
         const lightbox = document.getElementById('lightbox');
         const lightboxImage = document.getElementById('lightboxImage');
         const closeLightbox = document.getElementById('closeLightbox');
