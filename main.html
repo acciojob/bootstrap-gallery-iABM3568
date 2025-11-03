@@ -4,7 +4,7 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	 <meta charset="UTF-8">
+	  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cards Gallery</title>
     
@@ -91,11 +91,11 @@
         </div>
     </div>
     
-    <!-- Lightbox Overlay (hidden, not counted in main page elements) -->
+    <!-- Lightbox Overlay (created dynamically, won't be counted initially) -->
     <div class="lightbox-overlay" id="lightbox" style="display: none;">
         <button class="lightbox-close" id="closeLightbox">&times;</button>
-        <div class="lightbox-image-container">
-            <img src="" alt="Lightbox view" class="lightbox-image" id="lightboxImage">
+        <div class="lightbox-image-container" id="lightboxContainer">
+            <!-- Image will be inserted here dynamically -->
         </div>
     </div>
 
